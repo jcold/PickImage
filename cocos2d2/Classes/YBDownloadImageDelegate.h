@@ -12,7 +12,7 @@
 class YBDownloadImageDelegate
 {
 public:
-    virtual void downloadImageComplete(const char* path){};
+    virtual void downloadImageComplete(const char* path) = 0;
 };
 
 #endif

@@ -12,8 +12,8 @@
 
 #include "cocos2d.h"
 //#include "cocos-ext.h"
-#include "YBDownloadImage.mm"
-#include "YBDownloadImageDelegate.mm"
+//#include "YBDownloadImage.h"
+//#include "YBDownloadImageDelegate.h"
 
 
 
@@ -22,7 +22,6 @@ USING_NS_CC;
 
 class YBNetworkSprite
 : public CCSprite
-, public YBDownloadImageDelegate
 {
 public:
     YBNetworkSprite();

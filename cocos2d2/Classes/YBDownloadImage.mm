@@ -9,14 +9,16 @@
 #import "YBDownloadImage.h"
 #include "cocos2d.h"
 #include "CCNotificationCenter.h"
-#include "IosExtensions.mm"
+#include "IosExtensions.h"
 #include "ASIHTTPRequest.h"
-#include "YBDownloadImageDelegate.mm"
+#include "YBNetworkSprite.h"
+//#include "YBDownloadImageDelegate.h"
 
 
 //#define MSG_IMAGE_DOWNLOAD_COMPLETE "image_downlaoded_complete"
 
 USING_NS_CC;
+
 
 
 
@@ -27,7 +29,7 @@ USING_NS_CC;
 
 
 
--(const char*) setUrl:(const char*) str_url  andDelegate:(YBDownloadImageDelegate*)delegate
+-(const char*) setUrl:(const char*) str_url  andDelegate:(void*)delegate
 {
     m_delegate = delegate;
     
@@ -104,7 +106,8 @@ USING_NS_CC;
 {
     if (m_delegate != nil)
     {
-        m_delegate->downloadImageComplete([filePath UTF8String]);
+        YBNetworkSprite* delegate = (YBNetworkSprite*)m_delegate;
+        delegate->downloadImageComplete([filePath UTF8String]);
     }
 //    CCString* file = CCString::create([filePath UTF8String]);
 //    CCNotificationCenter::sharedNotificationCenter()->postNotification(MSG_IMAGE_DOWNLOAD_COMPLETE, (CCObject*)file);

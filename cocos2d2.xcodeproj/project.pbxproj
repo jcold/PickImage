@@ -196,6 +196,7 @@
 		6941F67A1600D73C00892FCC /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6941F6791600D73C00892FCC /* RootViewController.mm */; };
 		6941F67E1600D73C00892FCC /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6941F67D1600D73C00892FCC /* AppDelegate.cpp */; };
 		6941F6811600D73C00892FCC /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6941F6801600D73C00892FCC /* HelloWorldScene.cpp */; };
+		695F990716A442890050D03F /* YBDownloadImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 695F990616A442890050D03F /* YBDownloadImage.mm */; };
 		698AAF691697CE6E0038FD3B /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 698AAF531697CE6E0038FD3B /* ASIAuthenticationDialog.m */; };
 		698AAF6A1697CE6E0038FD3B /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 698AAF561697CE6E0038FD3B /* ASIDataCompressor.m */; };
 		698AAF6B1697CE6E0038FD3B /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 698AAF581697CE6E0038FD3B /* ASIDataDecompressor.m */; };
@@ -211,8 +212,7 @@
 		698AAF7E1697CF1C0038FD3B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698AAF7D1697CF1C0038FD3B /* MobileCoreServices.framework */; };
 		698AAF891697E4130038FD3B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 698AAF881697E4130038FD3B /* MBProgressHUD.m */; };
 		69E7C8CA16A3D301006AFDA1 /* YBNetworkSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 69E7C8C816A3D301006AFDA1 /* YBNetworkSprite.mm */; };
-		69E7C8D316A3D8D7006AFDA1 /* IosExtensions.mm in Sources */ = {isa = PBXBuildFile; fileRef = 69E7C8D216A3D8D7006AFDA1 /* IosExtensions.mm */; };
-		69E7C8D616A3E843006AFDA1 /* YBDownloadImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 69E7C8D516A3E841006AFDA1 /* YBDownloadImage.mm */; };
+		69E7C8D316A3D8D7006AFDA1 /* IosExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E7C8D216A3D8D7006AFDA1 /* IosExtensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -620,6 +620,8 @@
 		6941F67D1600D73C00892FCC /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		6941F67F1600D73C00892FCC /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		6941F6801600D73C00892FCC /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
+		695F990516A442890050D03F /* YBDownloadImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YBDownloadImage.h; path = Classes/YBDownloadImage.h; sourceTree = "<group>"; };
+		695F990616A442890050D03F /* YBDownloadImage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = YBDownloadImage.mm; path = Classes/YBDownloadImage.mm; sourceTree = "<group>"; };
 		698AAF521697CE6E0038FD3B /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		698AAF531697CE6E0038FD3B /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		698AAF541697CE6E0038FD3B /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -650,11 +652,9 @@
 		698AAF881697E4130038FD3B /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		69E7C8C816A3D301006AFDA1 /* YBNetworkSprite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = YBNetworkSprite.mm; path = Classes/YBNetworkSprite.mm; sourceTree = "<group>"; };
 		69E7C8C916A3D301006AFDA1 /* YBNetworkSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YBNetworkSprite.h; path = Classes/YBNetworkSprite.h; sourceTree = "<group>"; };
-		69E7C8D216A3D8D7006AFDA1 /* IosExtensions.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = IosExtensions.mm; path = Classes/IosExtensions.mm; sourceTree = "<group>"; };
-		69E7C8D516A3E841006AFDA1 /* YBDownloadImage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = YBDownloadImage.mm; path = Classes/YBDownloadImage.mm; sourceTree = "<group>"; };
-		69E7C8DA16A40B2B006AFDA1 /* YBDownloadImageDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = YBDownloadImageDelegate.mm; path = Classes/YBDownloadImageDelegate.mm; sourceTree = "<group>"; };
+		69E7C8D216A3D8D7006AFDA1 /* IosExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IosExtensions.m; path = Classes/IosExtensions.m; sourceTree = "<group>"; };
+		69E7C8DA16A40B2B006AFDA1 /* YBDownloadImageDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = YBDownloadImageDelegate.h; path = Classes/YBDownloadImageDelegate.h; sourceTree = "<group>"; };
 		69E7C8DB16A411E7006AFDA1 /* IosExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IosExtensions.h; path = Classes/IosExtensions.h; sourceTree = "<group>"; };
-		69E7C8DC16A41204006AFDA1 /* YBDownloadImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YBDownloadImage.h; path = Classes/YBDownloadImage.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1475,11 +1475,7 @@
 		6941F67B1600D73C00892FCC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				69E7C8DC16A41204006AFDA1 /* YBDownloadImage.h */,
-				69E7C8DB16A411E7006AFDA1 /* IosExtensions.h */,
-				69E7C8D516A3E841006AFDA1 /* YBDownloadImage.mm */,
-				69E7C8C816A3D301006AFDA1 /* YBNetworkSprite.mm */,
-				69E7C8C916A3D301006AFDA1 /* YBNetworkSprite.h */,
+				695F990416A43E710050D03F /* download image */,
 				691A30A31696C31900557F9F /* TestViewController.h */,
 				691A30A41696C31900557F9F /* TestViewController.m */,
 				6941F67C1600D73C00892FCC /* AppDelegate.h */,
@@ -1490,10 +1486,22 @@
 				691A309D1696B6E500557F9F /* PickImage.mm */,
 				691A30A01696BA3000557F9F /* YBPickImage.h */,
 				691A30A11696BA4100557F9F /* YBPickImage.mm */,
-				69E7C8D216A3D8D7006AFDA1 /* IosExtensions.mm */,
-				69E7C8DA16A40B2B006AFDA1 /* YBDownloadImageDelegate.mm */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		695F990416A43E710050D03F /* download image */ = {
+			isa = PBXGroup;
+			children = (
+				695F990516A442890050D03F /* YBDownloadImage.h */,
+				695F990616A442890050D03F /* YBDownloadImage.mm */,
+				69E7C8DB16A411E7006AFDA1 /* IosExtensions.h */,
+				69E7C8D216A3D8D7006AFDA1 /* IosExtensions.m */,
+				69E7C8C816A3D301006AFDA1 /* YBNetworkSprite.mm */,
+				69E7C8C916A3D301006AFDA1 /* YBNetworkSprite.h */,
+				69E7C8DA16A40B2B006AFDA1 /* YBDownloadImageDelegate.h */,
+			);
+			name = "download image";
 			sourceTree = "<group>";
 		};
 		698AAF511697CE6E0038FD3B /* ASIHTTPRequest */ = {
@@ -1794,8 +1802,8 @@
 				698AAF711697CE6E0038FD3B /* Reachability.m in Sources */,
 				698AAF891697E4130038FD3B /* MBProgressHUD.m in Sources */,
 				69E7C8CA16A3D301006AFDA1 /* YBNetworkSprite.mm in Sources */,
-				69E7C8D316A3D8D7006AFDA1 /* IosExtensions.mm in Sources */,
-				69E7C8D616A3E843006AFDA1 /* YBDownloadImage.mm in Sources */,
+				69E7C8D316A3D8D7006AFDA1 /* IosExtensions.m in Sources */,
+				695F990716A442890050D03F /* YBDownloadImage.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
