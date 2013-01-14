@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "1.0">
+   <FileBreakpoints>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "cocos2d2/Classes/HelloWorldScene.cpp"
+         timestampString = "379841874.233382"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "58"
+         endingLineNumber = "58"
+         landmarkName = "HelloWorld::init()"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "cocos2d2/Classes/HelloWorldScene.cpp"
+         timestampString = "379841937.117967"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "67"
+         endingLineNumber = "67"
+         landmarkName = "HelloWorld::init()"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "cocos2d2/Classes/YBNetworkSprite.mm"
+         timestampString = "379846507.401197"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "46"
+         endingLineNumber = "46"
+         landmarkName = "YBNetworkSprite::setUrl(const char* url)"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "cocos2d2/Classes/YBNetworkSprite.mm"
+         timestampString = "379846587.512262"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "44"
+         endingLineNumber = "44"
+         landmarkName = "YBNetworkSprite::setUrl(const char* url)"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "cocos2d2/Classes/YBDownloadImage.mm"
+         timestampString = "379848064.069924"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "58"
+         endingLineNumber = "58"
+         landmarkName = "-download"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "cocos2d2/Classes/YBNetworkSprite.mm"
+         timestampString = "379848200.674674"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "71"
+         endingLineNumber = "71"
+         landmarkName = "YBNetworkSprite::callImageReady(CCObject* obj)"
+         landmarkType = "5">
+      </FileBreakpoint>
+   </FileBreakpoints>
+</Bucket>
