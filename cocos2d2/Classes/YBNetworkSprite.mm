@@ -11,6 +11,20 @@
 #include "YBDownloadImage.h"
 
 
+YBNetworkSprite*
+YBNetworkSprite::create(const char *pszFileName)
+{
+    YBNetworkSprite *pobSprite = new YBNetworkSprite();
+    if (pobSprite && pobSprite->initWithFile(pszFileName))
+    {
+        pobSprite->autorelease();
+        return pobSprite;
+    }
+    CC_SAFE_DELETE(pobSprite);
+    return NULL;
+}
+
+
 YBNetworkSprite::YBNetworkSprite()
 : m_url(NULL)
 , m_file_path(NULL)
@@ -71,6 +85,7 @@ YBNetworkSprite::callImageReady(CCObject* obj)
         removeListener();
         CCLOG("Got Image: %s", path->getCString());
         CCSprite* sp = CCSprite::create(path->getCString());
+        setContentSize(sp->getContentSize());
         setTexture(sp->getTexture());
     }
 }
@@ -83,8 +98,11 @@ YBNetworkSprite::downloadImageComplete(const char* path)
     if (m_file_path->isEqual(CCString::create(path)))
     {
         CCLOG("Got Image: %s", path);
-        CCSprite* sp = CCSprite::create(path);
-        setTexture(sp->getTexture());
+        
+        initWithFile(path);
+//        CCTextureCache* cache = CCTextureCache::sharedTextureCache();
+//        cache->addImage(path);
+//        initWithTexture(cache->textureForKey(path));
     }
 }
 

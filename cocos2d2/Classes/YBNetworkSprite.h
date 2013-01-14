@@ -28,6 +28,8 @@ public:
     YBNetworkSprite();
     virtual ~YBNetworkSprite();
     
+    static YBNetworkSprite* create(const char* file_name);
+    
     CC_SYNTHESIZE_READONLY(CCString*, m_file_path, FilePath);
     
     virtual void downloadImageComplete(const char* path);

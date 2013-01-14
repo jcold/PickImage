@@ -88,6 +88,8 @@ bool HelloWorld::init()
     // add "HelloWorld" splash screen"
 //    YBNetworkSprite* pSprite = YBNetworkSprite::create("HelloWorld.png");
     YBNetworkSprite* pSprite = (YBNetworkSprite*)YBNetworkSprite::create("HelloWorld.png");
+//    YBNetworkSprite* pSprite = new YBNetworkSprite();
+    pSprite->initWithFile("HelloWorld.png");
     pSprite->setUrl("http://himg2.huanqiu.com/attachment2010/2013/0114/thumb_100_80_20130114073715973.jpg");
 
 
