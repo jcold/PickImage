@@ -8,14 +8,8 @@
 
 #import "YBDownloadImage.h"
 #include "cocos2d.h"
-#include "CCNotificationCenter.h"
 #include "IosExtensions.h"
 #include "ASIHTTPRequest.h"
-//#include "YBNetworkSprite.h"
-//#include "YBDownloadImageDelegate.h"
-
-
-//#define MSG_IMAGE_DOWNLOAD_COMPLETE "image_downlaoded_complete"
 
 USING_NS_CC;
 
@@ -106,15 +100,12 @@ USING_NS_CC;
 {
     if (m_delegate)
     {
-//        YBNetworkSprite* delegate = (YBNetworkSprite*)m_delegate;
         m_delegate->downloadImageComplete([filePath UTF8String]);
     }
     else
     {
         NSLog(@"Invalied delegate");
     }
-//    CCString* file = CCString::create([filePath UTF8String]);
-//    CCNotificationCenter::sharedNotificationCenter()->postNotification(MSG_IMAGE_DOWNLOAD_COMPLETE, (CCObject*)file);
 }
 
 

@@ -38,7 +38,6 @@ YBNetworkSprite::YBNetworkSprite()
 
 YBNetworkSprite::~YBNetworkSprite()
 {
-    removeListener();
     CC_SAFE_RELEASE_NULL(m_url);
     CC_SAFE_RELEASE_NULL(m_file_path);
 }
@@ -75,43 +74,18 @@ YBNetworkSprite::isReady()
 }
 
 
-void
-YBNetworkSprite::callImageReady(CCObject* obj)
-{
-    CCLOG("Got message");
-    CCString* path = (CCString*)obj;
-    if (m_file_path->isEqual(path))
-    {
-        removeListener();
-        CCLOG("Got Image: %s", path->getCString());
-        CCSprite* sp = CCSprite::create(path->getCString());
-        setContentSize(sp->getContentSize());
-        setTexture(sp->getTexture());
-    }
-}
-
 
 void
 YBNetworkSprite::downloadImageComplete(const char* path)
 {
-    CCLOG("Got message");
     if (m_file_path->isEqual(CCString::create(path)))
     {
         CCLOG("Got Image: %s", path);
-        
         initWithFile(path);
-//        CCTextureCache* cache = CCTextureCache::sharedTextureCache();
-//        cache->addImage(path);
-//        initWithTexture(cache->textureForKey(path));
     }
 }
 
 
-void
-YBNetworkSprite::removeListener()
-{
-//    CCNotificationCenter::sharedNotificationCenter()->removeObserver(this, MSG_IMAGE_DOWNLOAD_COMPLETE);
-}
 
 
 

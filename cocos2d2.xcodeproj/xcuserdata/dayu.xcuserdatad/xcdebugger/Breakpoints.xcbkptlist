@@ -34,11 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "cocos2d2/Classes/YBNetworkSprite.mm"
-         timestampString = "379867187.02533"
+         timestampString = "379868699.82567"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "61"
-         endingLineNumber = "61"
+         startingLineNumber = "60"
+         endingLineNumber = "60"
          landmarkName = "YBNetworkSprite::setUrl(const char* url)"
          landmarkType = "5">
       </FileBreakpoint>
@@ -47,7 +47,33 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "cocos2d2/Classes/YBNetworkSprite.mm"
-         timestampString = "379867187.02533"
+         timestampString = "379868699.82567"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "57"
+         endingLineNumber = "57"
+         landmarkName = "YBNetworkSprite::setUrl(const char* url)"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "cocos2d2/Classes/YBNetworkSprite.mm"
+         timestampString = "379868699.82567"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "56"
+         endingLineNumber = "56"
+         landmarkName = "YBNetworkSprite::setUrl(const char* url)"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "cocos2d2/Classes/YBNetworkSprite.mm"
+         timestampString = "379868699.82567"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "58"
@@ -59,65 +85,13 @@
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "cocos2d2/Classes/YBNetworkSprite.mm"
-         timestampString = "379867187.02533"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "86"
-         endingLineNumber = "86"
-         landmarkName = "YBNetworkSprite::callImageReady(CCObject* obj)"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "cocos2d2/Classes/YBNetworkSprite.mm"
-         timestampString = "379867187.02533"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "57"
-         endingLineNumber = "57"
-         landmarkName = "YBNetworkSprite::setUrl(const char* url)"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "cocos2d2/Classes/YBNetworkSprite.mm"
-         timestampString = "379867187.02533"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "59"
-         endingLineNumber = "59"
-         landmarkName = "YBNetworkSprite::setUrl(const char* url)"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
          filePath = "cocos2d2/Classes/YBDownloadImage.mm"
-         timestampString = "379866415.396057"
+         timestampString = "379868803.343823"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "64"
-         endingLineNumber = "64"
+         startingLineNumber = "58"
+         endingLineNumber = "58"
          landmarkName = "-download"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "cocos2d2/Classes/YBDownloadImage.mm"
-         timestampString = "379866415.396057"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "116"
-         endingLineNumber = "116"
-         landmarkName = "-postMessage"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

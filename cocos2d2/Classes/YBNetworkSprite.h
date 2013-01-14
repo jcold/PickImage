@@ -38,12 +38,10 @@ public:
     void setUrl(const char* url);
 
     bool isReady();
-    void callImageReady(CCObject* obj);
 private:
     CCString* m_url;
     bool m_is_ready;
     
-    void removeListener();
 };
 
 #endif /* defined(__cocos2d2__YBNetworkSprite__) */
