@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#include "YBDownloadImageDelegate.h"
+
 
 
 @interface YBDownloadImage : NSObject
@@ -14,14 +16,15 @@
     NSString* filePath;
     NSString* fileName;
     NSString* m_url;
-    void* m_delegate;
+    YBDownloadImageDelegate* m_delegate;
 }
 
-@property (nonatomic, retain) NSString* filePath;
-@property (nonatomic, retain) NSString* fileName;
+//@property (nonatomic, retain) NSString* filePath;
+//@property (nonatomic, retain) NSString* fileName;
 
 
--(const char*) setUrl:(const char*) url andDelegate:(void*)delegate;
+-(const char*) setUrl:(const char*) url andDelegate:(YBDownloadImageDelegate*)delegate;
 -(void) download;
+-(void) postMessage;
 
 @end

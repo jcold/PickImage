@@ -39,7 +39,7 @@ YBNetworkSprite::setUrl(const char* url)
     
 
     YBDownloadImage* download = [[YBDownloadImage alloc] init];
-    const char* path = [download setUrl:url andDelegate:(void*)this];
+    const char* path = [download setUrl:url andDelegate:this];
     m_file_path = CCString::create(path);
     m_file_path->retain();
     [download download];

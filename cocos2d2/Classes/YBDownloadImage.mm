@@ -11,7 +11,7 @@
 #include "CCNotificationCenter.h"
 #include "IosExtensions.h"
 #include "ASIHTTPRequest.h"
-#include "YBNetworkSprite.h"
+//#include "YBNetworkSprite.h"
 //#include "YBDownloadImageDelegate.h"
 
 
@@ -24,12 +24,12 @@ USING_NS_CC;
 
 @implementation YBDownloadImage
 
-@synthesize filePath;
-@synthesize fileName;
+//@synthesize filePath;
+//@synthesize fileName;
 
 
 
--(const char*) setUrl:(const char*) str_url  andDelegate:(void*)delegate
+-(const char*) setUrl:(const char*) str_url andDelegate:(YBDownloadImageDelegate*)delegate
 {
     m_delegate = delegate;
     
@@ -104,10 +104,14 @@ USING_NS_CC;
 
 -(void) postMessage
 {
-    if (m_delegate != nil)
+    if (m_delegate)
     {
-        YBNetworkSprite* delegate = (YBNetworkSprite*)m_delegate;
-        delegate->downloadImageComplete([filePath UTF8String]);
+//        YBNetworkSprite* delegate = (YBNetworkSprite*)m_delegate;
+        m_delegate->downloadImageComplete([filePath UTF8String]);
+    }
+    else
+    {
+        NSLog(@"Invalied delegate");
     }
 //    CCString* file = CCString::create([filePath UTF8String]);
 //    CCNotificationCenter::sharedNotificationCenter()->postNotification(MSG_IMAGE_DOWNLOAD_COMPLETE, (CCObject*)file);
