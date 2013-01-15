@@ -1482,10 +1482,7 @@
 				6941F67D1600D73C00892FCC /* AppDelegate.cpp */,
 				6941F67F1600D73C00892FCC /* HelloWorldScene.h */,
 				6941F6801600D73C00892FCC /* HelloWorldScene.cpp */,
-				691A309C1696B6E500557F9F /* PickImage.h */,
-				691A309D1696B6E500557F9F /* PickImage.mm */,
-				691A30A01696BA3000557F9F /* YBPickImage.h */,
-				691A30A11696BA4100557F9F /* YBPickImage.mm */,
+				69687C5D16A5A01700A95004 /* pick image */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1502,6 +1499,17 @@
 				69E7C8DA16A40B2B006AFDA1 /* YBDownloadImageDelegate.h */,
 			);
 			name = "download image";
+			sourceTree = "<group>";
+		};
+		69687C5D16A5A01700A95004 /* pick image */ = {
+			isa = PBXGroup;
+			children = (
+				691A309C1696B6E500557F9F /* PickImage.h */,
+				691A309D1696B6E500557F9F /* PickImage.mm */,
+				691A30A01696BA3000557F9F /* YBPickImage.h */,
+				691A30A11696BA4100557F9F /* YBPickImage.mm */,
+			);
+			name = "pick image";
 			sourceTree = "<group>";
 		};
 		698AAF511697CE6E0038FD3B /* ASIHTTPRequest */ = {
