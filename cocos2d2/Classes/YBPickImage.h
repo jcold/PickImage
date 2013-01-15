@@ -12,7 +12,7 @@
 class YBPickImage
 {
 public:
-    static void startPick();
+    static void pickImageAndUpload(const char* upload_url);
 };
 
 #endif

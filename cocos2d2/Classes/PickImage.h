@@ -21,12 +21,13 @@
     AppController* m_vc;
     
     MBProgressHUD *HUD;
+    NSString* m_upload_url;
 }
 
 
 
 -(void)openMenu: (AppController*)vc;
-
+-(void)setUploadUrl: (const char*) url;
 
 
 @end

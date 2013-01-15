@@ -15,6 +15,11 @@
 
 
 
+-(void)setUploadUrl: (const char*) url
+{
+    m_upload_url = [NSString stringWithCString:url encoding:NSUTF8StringEncoding];
+}
+
 
 -(void)openMenu: (AppController*)vc
 {
@@ -235,8 +240,8 @@
 
 -(void) uploadFile
 {
-    
-    NSURL *url = [NSURL URLWithString:@"http://ybp.h.yiibox.com/test/upload"];
+    // @"http://ybp.h.yiibox.com/test/upload"
+    NSURL *url = [NSURL URLWithString:m_upload_url];
 
     ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
 //    [request setPostValue:@"Copsey" forKey:@"last_name"];

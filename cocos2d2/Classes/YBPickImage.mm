@@ -12,14 +12,14 @@
 #include "AppController.h"
 
 void
-YBPickImage::startPick()
+YBPickImage::pickImageAndUpload(const char* upload_url)
 {
-    NSString *tmpDir = NSTemporaryDirectory();
-    NSLog(@"%@", tmpDir);
-    
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSLog(@"%@", documentsDirectory);
+//    NSString *tmpDir = NSTemporaryDirectory();
+//    NSLog(@"%@", tmpDir);
+//    
+//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+//    NSString *documentsDirectory = [paths objectAtIndex:0];
+//    NSLog(@"%@", documentsDirectory);
 
     AppController* pApp = (AppController*)[[UIApplication sharedApplication] delegate];
     

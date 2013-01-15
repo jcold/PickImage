@@ -120,7 +120,7 @@ void HelloWorld::menuCloseCallback(CCObject* pSender)
     
     
 
-    YBPickImage::startPick();
+    YBPickImage::pickImageAndUpload("http://ybp.h.yiibox.com/test/upload");
     
     
     
