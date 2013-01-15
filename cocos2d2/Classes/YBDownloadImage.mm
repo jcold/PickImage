@@ -69,7 +69,7 @@ USING_NS_CC;
     
     
     NSURL *url = [NSURL URLWithString:m_url];
-    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    __block ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request setDownloadDestinationPath:filePath];
     
     [request setCompletionBlock:^{
@@ -92,7 +92,7 @@ USING_NS_CC;
     }];
     
     
-    [request startSynchronous];
+    [request startAsynchronous];
 }
 
 
